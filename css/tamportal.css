@@ -1,0 +1,436 @@
+body{
+	background-image: url("../images/p3/stars.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+}
+
+#hometitle{
+	color: white;
+	font-size: 700%;
+	font-weight: bold;
+	font-family: "Georgia", serif;
+}
+
+h1{
+	font-size: 450%;
+	font-weight: bold;
+	font-family: "Georgia", serif;
+}
+.italic{
+	font-style: italic;
+}
+.center{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+#subtitle{
+	font-size: 200%;
+}
+
+#links{
+	margin-top: 5%;
+	font-size: 180%;
+	font-weight: 100;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#work, #about, #projects{
+	padding: 0px;
+}
+a:link, a:active{
+	text-decoration: none;
+	color: white;
+}
+#work:hover{
+	opacity: .5;
+	font-style: italic;
+}
+#about:hover{
+	opacity: .5;
+	font-style: italic;
+	/*border-top: 4px solid white;
+	border-bottom: 4px solid white;
+	transition: .3s;*/
+}
+
+#projects:hover{
+	opacity: .5;
+	font-style: italic;
+}
+
+a:visited{
+	color: white;
+}
+
+.fa{
+  padding: 15px;
+  font-size: 60px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+  margin: 5px 2px;
+  background-color: hsla(0, 100%, 100%, 0.5);
+}
+.fa:hover{
+	opacity: .7;
+}
+
+#work, #about, #projects{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25%;
+}
+#about{
+	margin-bottom: 30px;
+}
+
+#container{
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+}
+nav{
+	grid-column-start: 1;
+	grid-column-end: 2;
+	position: fixed;
+	background: rgb(37,35,56);
+	background: linear-gradient(180deg, rgba(37,35,56,1) 0%, rgba(119,119,128,0) 100%, rgba(0,212,255,1) 100%);
+	height: 100vh;
+	width: 25vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+main{
+	grid-column-start: 2;
+	grid-column-end: 3;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#logo{
+	width: 15vw;
+	margin-top: 10%;
+}
+
+.navlink{
+	font-size: 150%;
+	margin-top: 5%;
+}
+.navlink:hover{
+	opacity: .5;
+	/*border-top: 4px solid white;
+	border-bottom: 4px solid white;
+	transition: .3s;*/
+}
+.on{
+	border-bottom: 4px solid white;
+}
+
+.subhead{
+	margin-top: 5%;
+	padding: 0% 10% 2% 10%;
+	border-bottom: 2px solid white;
+}
+
+#face{
+	width: 20%;
+	margin-top: 3%;
+}
+
+p{
+	font-size: 200%;
+	margin-top: 2%;
+	max-width: 80%;
+}
+.smaller{
+	font-size: 150%;
+	text-align: center;
+	line-height: 1.3em;
+
+}
+footer{
+	grid-column-start: 2;
+	grid-column-end: 3;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-style: italic;
+	font-size: 150%;
+}
+
+.aboutlink{
+	margin-top: 2%;
+}
+
+.aboutlink:hover{
+	opacity: .5;
+}
+
+#email{
+	margin-bottom: 10%;
+}
+#firstlink{
+	margin-top: 10%;
+}
+.projintro{
+	max-width: 80%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+
+}
+.projbox{
+	max-width: 80%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.projimg{
+	width: 100%;
+	margin: 5% 0% 3% 0%;
+}
+.projdesc{
+	font-size: 100%;
+	line-height: 1.3em;
+}
+.pwords{
+	width: 80%;
+}
+.solo{
+	font-family: "Georgia", serif;
+	font-weight: bold;
+	font-size: 230%;
+	margin-top: 4%;
+	padding-bottom: 7px;
+	border-bottom: 1px solid white;
+
+}
+.install{
+	font-weight: bold;
+}
+.last{
+	margin-bottom: 20%;
+}
+#bloglink{
+	font-size: 120%;
+	line-height: 1.3em;
+	justify-content: center;
+}
+.workbox{
+	max-width: 80%;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-column-gap: 1em;
+	margin-top: 5%;
+}
+
+.workimg{
+	grid-column-start: 1;
+	grid-column-end: 2;
+	width: 100%;
+}
+
+.words{
+	grid-column-start: 2;
+	grid-column-end: 3;
+	display: flex;
+	flex-direction: column;
+}
+
+.workdesc{
+	font-size: 100%;
+	line-height: 1.3em;
+}
+
+.workhead, .projhead{
+	font-size: 200%;
+	font-weight: bold;
+	font-family: "Georgia", serif;
+	padding-bottom: 7px;
+	border-bottom: 1px solid white;
+}
+.workhead{
+	line-height: 1.3em;
+}
+.projhead{
+	font-style: italic;
+}
+
+.worklink:hover{
+	opacity: .7;
+}
+
+#last{
+	margin-bottom: 50px;
+}
+
+/*This is to target a bug that was messing up my site in firefox*/
+@-moz-document url-prefix(){ 
+  .subhead{
+     margin-top: 5%;
+  }
+  footer{
+  	margin-top: 200px;
+  	margin-bottom: 20%;
+  	line-height: 1.5em;
+  }
+  #hometitle{
+  	margin-top: 5%;
+  }
+}
+
+/*Responsivity*/
+@media screen and (min-width: 850px)
+{
+
+}
+@media screen and (max-width: 849px)
+{
+	h1{
+		font-size: 300%;
+	}
+	p{
+		font-size: 140%;
+	}
+	.solo{
+		font-size: 170%;
+	}
+	.smaller{
+		font-size: 110%;
+	}
+	#face{
+		width: 30%;
+	}
+	.navlink{
+		font-size: 120%;
+		line-height: 1.2em;
+	}
+	#hometitle{
+		font-size: 400%;
+	}
+	#subtitle{
+		font-size: 150%;
+	}
+	#links{
+		font-size: 130%;
+	}
+	.workbox{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-top: 15%;
+	}
+	.words{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		margin-top: 5%;
+	}
+	.workimg{
+		width: 60%;
+	}
+	.workhead{
+		font-size: 160%;
+
+	}
+	.workdesc{
+		font-size: 90%;
+	}
+	.aboutlink{
+		font-size: 80%;
+	}
+	.projhead{
+		font-size: 150%;
+	}
+	.subhead{
+		margin-top: 10%;
+	}
+	.projdesc{
+		margin-top: 3%;
+	}
+	.on{
+		border-bottom: 2px solid white;
+	}
+	@-moz-document url-prefix(){ 
+	  .subhead{
+	     margin-top: 5%;
+	  }
+	  /*#workhead{
+	  	margin-top: 200px;
+	  }*/
+	  footer{
+	  	margin-top: 150px;
+	  	margin-bottom: 20%;
+	  	line-height: 1.5em;
+	  }
+	  .workbox{
+	  	margin-top: 3%;
+	  }
+	  #last{
+	  	margin-bottom: 0px;
+	  	padding-bottom: 50px;
+	  }
+	}
+}
+@media screen and (max-width: 500px)
+{
+	#bloglink{
+		font-size: 100%;
+	}
+	.projdesc{
+		margin-top: 5%;
+	}
+	.aboutlink{
+		font-size: 70%;
+	}
+	.subhead{
+		font-size: 230%;
+	}
+	.solo{
+		font-size: 140%;
+		margin-top: 10%;
+		margin-bottom: 5%;
+	}
+	.projhead, .workhead{
+		font-size: 140%;
+	}
+	.projhead{
+		margin-top: 5%;
+	}
+	#hometitle{
+		font-size: 250%;
+	}
+	#subtitle{
+		font-size: 120%;
+	}
+	#links{
+		font-size: 100%;
+	}
+	.navlink{
+		font-size: 90%;
+	}
+	.on{
+		border-bottom: 1px solid white;
+	}
+	@-moz-document url-prefix(){
+		.subhead{
+			font-size: 160%;
+		}
+	}
+}

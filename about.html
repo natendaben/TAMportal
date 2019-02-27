@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>About</title>
+	<link href="css/reset.css" type="text/css" rel="stylesheet">
+	<link href="css/tamportal.css" type="text/css" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+</head>
+<body>
+	<div id="container">
+		<nav>
+			<img id="logo" src="images/p3/logo.png" alt="logo">
+			<a href="index.html" class="navlink">home</a>
+			<a href="work.html" class="navlink">coursework</a>
+			<a href="projects.html" class="navlink">projects</a>
+			<a href="about.html" class="on navlink">about</a>
+		</nav>
+		<main>
+			<h1 class="subhead">About Me</h1>
+			<img id="face" src="images/p3/face.png" alt="face">
+			<p>Hi, I'm Nate.</p>
+			<p class="smaller">I'm a third-year student in the engineering school at the University of Colorado Boulder. My major is Technology, Arts and Media.</p>
+			<p class="smaller">Basically, that means I spend a lot of my time thinking about how to make things that work well, look beautiful, and (hopefully!) cause you to think.</p>
+			<p class="smaller">I love great people, great design, the outdoors, and music of all kinds. Depending on what you want to learn more about me, click on the links below or contact me!</p>
+		</main>
+		<footer>
+			<a class="aboutlink" id="firstlink" href="resume.pdf" target="_blank">resume</a>
+			<a class="aboutlink" id="aboutlink" href="https://natebennett1.wordpress.com/" target="_blank">design blog</a>
+			<a class="aboutlink" href="https://www.facebook.com/nate.bennett.739" target="_blank">facebook</a>
+			<a class="aboutlink" href="https://www.linkedin.com/in/ntbnt/" target="_blank">linkedin</a>
+			<a class="aboutlink" href="https://vimeo.com/user66214693" target="_blank">vimeo</a>
+			<a class="aboutlink" href="https://www.youtube.com/channel/UCVBuy8TVcB4Cj42Q-a7yVcg" target="_blank">youtube</a>
+			<a class="aboutlink" id="email" href="mailto:nathanael.bennett@colorado.edu">email</a>
+		</footer>
+		<script>
+			var email = document.getElementById("email");
+			email.addEventListener("mouseover", function(){document.getElementById("email").textContent = "nathanael.bennett@colorado.edu";}, false)
+			email.addEventListener("mouseout", function(){document.getElementById("email").textContent = "email";}, false)
+		</script>
+	</div>
+</body>
+</html>
